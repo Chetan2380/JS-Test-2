@@ -41,7 +41,7 @@
 //         for(var j=0;j<array2.length;j++){
 //             // console.log(array1[i],array2[j])
 //             if(array1[i]===array2[j]){
-//                 array3.push(array1[i],array2[j])
+//                 array3.push(array1[i])
 //             }
 //         }
 //     }
@@ -51,17 +51,12 @@
 // const array4=common(array1,array2);
 // console.log(array4)
 
-// Q8.
-
-// function countwords(sentence){
-//     var count=0;
-//     for(var i=0;i<sentence.length;i++){
-//         count=i
-//     }
-//     console.log(count)
+// Q4.
+// var info={name:"Alice",age:25}
+// function fetchkeyvalue(){
+//     console.log(info.name)
 // }
-
-// countwords("This is a sample sentence")
+// fetchkeyvalue(info)
 
 // Q5.
 
@@ -69,8 +64,12 @@
 // function todigit(number){
 //     var number1;
 //     number1=number.toString();
-//     number3=number1.split('')
-//     number2.push(number3)
+//     for(var i=0;i<number1.length;i++){
+//         number3=i+1;
+//         number2.push(number3)
+//     }
+//     // number3=number1.split('')
+    
 //     return number2;
 // }
 // const numarray=todigit(12345);
@@ -90,4 +89,36 @@
 // duplicateletter("hello")
 
 
+// Q7.
+// var info=[{name:"Alice"},{name:"Bob"},{name:"Charlie"}]
+// function fetchkeyvalue(){
+//     for (let key in info) {
+//         console.log(info[key]);
+//       }
+// }
+// fetchkeyvalue(info)
+
+// Q8.
+// function countwords(sentence){
+//     var count=0;
+//     for(var i=0;i<sentence.length;i++){
+//         if (sentence[i]===" ")
+//             count++
+//     }
+//     count++;
+//     console.log(count)
+// }
+
+// countwords("This is a sample sentence")
+
+
+
+// Q9.
+// array=[10, 2, 14, 5, 7]
+// function secondsmallest(array){
+//     array.sort((a,b)=>a-b);
+//     return array[1];
+// }
+
+// console.log(secondsmallest(array))
 
