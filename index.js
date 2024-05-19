@@ -122,3 +122,14 @@
 
 // console.log(secondsmallest(array))
 
+
+// Q10.
+date=[2024,4,15]
+function newDate(date){
+    a=date.slice(0,1)
+    b=date.slice(1,2);
+    c=date.slice(2);
+    d=a + '-' + b + '-' + c
+    console.log(d)
+}
+newDate(date)
