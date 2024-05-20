@@ -79,8 +79,9 @@
 // Q6.
 
 // function duplicateletter(str){
+        // var str2='';
 //     for(var i=0;i<str.length;i++){
-//         var str2='';
+//         
 //         str2 += str[i]+str[i];
 //         console.log(str2);
 //     }
