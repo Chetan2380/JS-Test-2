@@ -1,21 +1,3 @@
-// Q3.
-// array1=[1,2,3,4]
-// array2=[2,4,6,8]
-// array3=[];
-// function intersection(array1,array2){
-//     for(var i=0;i<array1.length;i++){
-//         for(var j=0;j<array1.length;j++){
-//             if(array1[i]===array2[j]){
-//                 array3.push(array1[i])
-//             }
-//         }
-//     }
-//     return array3;
-// }
-// const intersection1=intersection(array1,array2)
-// console.log(intersection1)
-
-
 // Q1.
 // for(var i=1;i<=100;i++){
 //     // console.log(i)
@@ -35,6 +17,23 @@
 //         console.log(i)
 //     }
 // }
+
+// Q3.
+// array1=[1,2,3,4]
+// array2=[2,4,6,8]
+// array3=[];
+// function intersection(array1,array2){
+//     for(var i=0;i<array1.length;i++){
+//         for(var j=0;j<array1.length;j++){
+//             if(array1[i]===array2[j]){
+//                 array3.push(array1[i])
+//             }
+//         }
+//     }
+//     return array3;
+// }
+// const intersection1=intersection(array1,array2)
+// console.log(intersection1)
 
 // Q5.
 // array=[1,2,2,3,4,4,5]
