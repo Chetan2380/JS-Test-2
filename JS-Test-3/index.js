@@ -35,6 +35,18 @@
 // const intersection1=intersection(array1,array2)
 // console.log(intersection1)
 
+// Q4.
+// var divisor = 2;
+// var number = 13195;
+// while(number > 1){
+//     if(number % divisor === 0){ 
+//         number /= divisor;
+//     } else {
+//         divisor++;
+//     }
+// }
+// console.log(divisor);
+
 // Q5.
 // array=[1,2,2,3,4,4,5]
 // function remdup(){
@@ -42,6 +54,17 @@
 // }
 // var array2=remdup(array)
 // console.log(array2)
+
+
+// Q6.
+// function flatten(arr) {
+//   return arr.flat(Infinity)
+// }
+
+// const arr = [1, [2, [3, [4, 5]]], 6];
+
+// console.log(flatten(arr));
+
 
 // Q7.
 
