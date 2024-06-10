@@ -20,7 +20,8 @@
 // console.log("Factorial:",num)
 // console.log("NUmber of iterations:",count)
 
-// Q3.
+// Q3.Create a JavaScript function that takes an array of numbers as input and returns the sum of all the even numbers using a for loop.
+
 // array=[1,2,3,4,5,6,7,8,9,10];
 // var sum=0;
 // function sumeven(array){
@@ -36,21 +37,27 @@
 // console.log(result);
 
 // Q4.
-// function fibonacci(number){
-//     var a=0;
-//     var b=1;
-//     var newnum;
-//     newnum=a+b;
-//     console.log(a);
-//     console.log(b);
-//     while(newnum<=number){
-//         console.log(newnum)
-//         a=b;
-//         b=newnum;
-//         newnum=a+b;
-//     }
-// }
-// fibonacci(10)
+array=[];
+function fibonacci(number){
+    var a=0;
+    var b=1;
+    var newnum;
+    newnum=a+b;
+    array.push(a);
+    array.push(b);
+    array.push(newnum);
+
+    while(newnum<=number){
+        // console.log(newnum)
+        a=b;
+        b=newnum;
+        newnum=a+b;
+        array.push(newnum);
+    }
+    return array;
+}
+const result=fibonacci(10);
+console.log(result);
 
 // Q5.
 // array=["rishabhp","virat","rohit","klrahul1"]
@@ -88,44 +95,43 @@
 // }
 // reversestr(string)
 
-//Q6.
-// var primenum=true;
-// function prime(number){
-//     if(number<2){
-//         return false;
+//Q6.Write a JavaScript function that takes a number as input and returns true if it is a prime number, otherwise false. Additionally, the function should also print all the factors of the number.
+
+// var primenum = true;
+// function prime(number) {
+//   if (number < 2) {
+//     return false;
+//   } else if (number >= 2) {
+//     for (var i = 2; i < number; i++) {
+//       if (number % i == 0) {
+//         console.log("Factor:", i);
+//         primenum = false;
+//       }
 //     }
-//     else if(number>=2){
-//         for(var i=2;i<number;i++){
-//             if(number%i==0){
-//                 console.log("Factor:",i);
-//                 primenum=false;
-//             }
-//         }
-//         if(primenum){
-//             console.log("True");
-//         }
-//         else{
-//             console.log("False");
-//         }
-//     }    
+//     if (primenum) {
+//       console.log("True");
+//     } else {
+//       console.log("False");
+//     }
+//   }
 // }
-// console.log(prime(12))
+// console.log(prime(12));
 
 // Q9.
 
-function randompassword(){
-    let password="";
-    let string="ABCDEFGHIJKLMNOPQRSTUVWXYZ"+"abcdefghijklmnopqrstuvwxyz"+'0123456789';
+// function randompassword(){
+//     let password="";
+//     let string="ABCDEFGHIJKLMNOPQRSTUVWXYZ"+"abcdefghijklmnopqrstuvwxyz"+'0123456789';
 
-    for(let i=0;i<=8;i++){
-        let char=Math.floor(Math.random()*string.length+1);
+//     for(let i=0;i<=8;i++){
+//         let char=Math.floor(Math.random()*string.length+1);
 
-        password+=string.charAt(char)
-    }
-    return password;
-}
+//         password+=string.charAt(char)
+//     }
+//     return password;
+// }
 
-console.log(randompassword())
+// console.log(randompassword())
 
 // Q10.
 // array=[1,2,3,4,5,6,7,8,9,10]
@@ -146,4 +152,3 @@ console.log(randompassword())
 
 // const result=maxdiff(array);
 // console.log(result);
-
